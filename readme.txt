@@ -1,0 +1,1 @@
+Please open first the index.html to read the instructions

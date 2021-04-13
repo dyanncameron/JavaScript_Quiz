@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+   
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #6f8fb1;
+}
+
+
+/* Title of the info box*/
+.info_box {
+    height: 330px;
+    width: 50rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);           
+    background: #fff;
+    border-radius:40px 40px 40px 40px;
+}
+/* start button */
+button{
+    margin-left: 45%;
+    font-size: 25px;
+    font-weight: 500;
+    color: #007bff;
+    padding: 10px 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #6f8fb1; 
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background:#fff;
+    cursor: pointer;
+    }
+button:hover{
+        background-color: #6f8fb1;
+        color: white;
+    }
+    
+
+/* Info list*/
+.info_box .info-title{
+   
+    text-align: center ;
+    background: #fff;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 40px;
+}
+
+
+.info_box .info-list{
+    padding: 15px 30px;
+    background: #fff;
+}
+
+.info_box .info-list .info{
+    margin: 5px 0;
+    font-size: 17px;
+
+
+  
+}
+
+/* Responsive layout */
+@media screen and (max-width: 900px) {.info_box
+    {
+      width: 100%;
+      margin-top: 0;
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="icon" type="png" href="titlebaricon/code.png">  <!--Title bar icon -->
+    <title>JAVASCRIPT QUIZ</title>
+</head>
+
+<body>
+    <!-- Question CONTAINER -->
+    <div class="container">
+        <header>
+            <div class="pull-left">JavaScript Quiz</div>
+            <div class="pull-right">Total of 10 Questions</div> 
+        </header>
+        <main>
+            <!--Question Forms and Button -->           
+            <form class="questionForm" id="q1" data-question="1">
+                <h3>What does CSS stand for?</h3>
+                <ul class="option">
+                <li><input name="q1" type="radio" value="a" />a. Cascading CSS</li>
+                <li><input name="q1" type="radio" value="b" />b. Cascading separate style</li>
+                <li><input name="q1" type="radio" value="c" />c. Cascading Style Sheet</li>
+                </ul>
+                <button id="submit" onclick="loadNextQuestion();">Submit</button>
+            </form>
+
+            <form class="questionForm" id="q2" data-question="2">
+                <h3>Which attribute can set text to bold?</h3>
+                <ul class="option">
+                    <li><input name="q2" type="radio" value="a" />a. Text-decoration</li>
+                    <li><input name="q2" type="radio" value="b" />b. Font style</li>
+                    <li><input name="q2" type="radio" value="c" />c. Font weight</li>
+                </ul>
+                <button id="submit" onclick="loadNextQuestion2();">Submit</button>
+            </form>
+
+            <form class="questionForm" id="q3" data-question="3">
+                <h3>Which tag is used to link an external CSS file?</h3>
+                <ul class="option">
+                    <li><input name="q3" type="radio" value="a" />a. Script</li>
+                    <li><input name="q3" type="radio" value="b" />b. Link</li>
+                    <li><input name="q3" type="radio" value="c" />c. Rel</li>
+                </ul>
+                <button id="submit" onclick="loadNextQuestion3();">Submit</button>
+            </form>
+
+            <form class="questionForm" id="q4" data-question="4">
+                <h3>Which attribute sets the underline property?</h3>
+                <ul class="option">
+                    <li><input name="q4" type="radio" value="a" />a. Font style</li>
+                    <li><input name="q4" type="radio" value="b" />b. Text-decoration</li>
+                    <li><input name="q4" type="radio" value="c" />c. Font weight</li>
+                </ul>
+                
+                <button id="submit" onclick="loadNextQuestion4();">Submit</button>
+            </form>
+
+            <form class="questionForm" id="q5" data-question="5">
+                <h3>Which measurement unit is NOT relative?</h3>
+                <ul class="option">
+                    <li><input name="q5" type="radio" value="a" />a. Px</li>
+                    <li><input name="q5" type="radio" value="b" />b. Cm</li>
+                    <li><input name="q5" type="radio" value="c" />c. MM</li>
+                    <li><input name="q5" type="radio" value="d" />d. Inch</li>
+                </ul>
+               
+                <button id="submit" onclick="loadNextQuestion5();">Submit</button>
+            </form>
+
+            <form class="questionForm" id="q6" data-question="6">
+                <h3>Which measurement unit IS relative?</h3>
+                <ul class="option">
+                    <li><input name="q6" type="radio" value="a" />a. Em</li>
+                    <li><input name="q6" type="radio" value="b" />b. Cm</li>
+                    <li><input name="q6" type="radio" value="c" />c. MM</li>
+                    <li><input name="q6" type="radio" value="d" />d. Inch</li>
+                </ul>
+               
+                <button id="submit" onclick="loadNextQuestion6();">Submit</button>
+            </form>
+
+            <form class="questionForm" id="q7" data-question="7">
+                <h3>What attribute is used move an element’scontent away from its border?</h3>
+                <ul class="option">
+                    <li><input name="q7" type="radio" value="a" />a. Margin</li>
+                    <li><input name="q7" type="radio" value="b" />b. Padding</li>
+                    <li><input name="q7" type="radio" value="c" />c. Border</li>
+                    <li><input name="q7" type="radio" value="d" />d. Width</li>
+                </ul>
+                
+                <button id="submit" onclick="loadNextQuestion7();">Submit</button>
+            </form>
+
+            <form class="questionForm" id="q8" data-question="8">
+                <h3>Which attribute does not contribute to a block elements total width?</h3>
+                <ul class="option">
+                    <li><input name="q8" type="radio" value="a" />a. Width</li>
+                    <li><input name="q8" type="radio" value="b" />b. Border</li>
+                    <li><input name="q8" type="radio" value="c" />c. Background-image</li>
+                    <li><input name="q8" type="radio" value="d" />d. Padding</li>
+                </ul>
+              
+                <button id="submit" onclick="loadNextQuestion8();">Submit</button>
+            </form>
+            
+            <form class="questionForm" id="q9" data-question="9">
+                <h3>What property changes positioned elements display order?</h3>
+                <ul class="option">
+                    <li><input name="q9" type="radio" value="a" />a. Width</li>
+                    <li><input name="q9" type="radio" value="b" />b. Background</li>
+                    <li><input name="q9" type="radio" value="c" />c. Z-index</li>
+                    <li><input name="q9" type="radio" value="d" />d. Azimuth</li>
+                </ul>
+             
+                <button id="submit" onclick="loadNextQuestion9();">Submit</button>
+            </form>
+
+            <form class="questionForm" id="q10" data-question="10">
+                <h3>Which value of background-repeat will cause a background to repeat vertically?</h3>
+                <ul class="option">
+                    <li><input name="q10" type="radio" value="a" />a. Repeat-x</li>
+                    <li><input name="q10" type="radio" value="b" />b. Repeat</li>
+                    <li><input name="q10" type="radio" value="c" />c. Repeat-y</li>
+                    <li><input name="q10" type="radio" value="d" />d. No-repeat</li>
+                </ul>
+                <button id="submit" onclick="loadNextQuestion10();">Submit</button>
+            </form>
+
+
+            <div id="results"></div> <!-- Result Div and ID -->
+			<br>
+		</main>
+		<footer>
+			<div class="pull-left">	&copy Vision College 2021</div>
+		</footer>
+	</div>
+<script src="js/jquery.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* Font style*/
+
+body{
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.6em;
+	background: #6f8fb1;
+}
+
+li{
+	list-style:none;
+}
+h3 {
+    font-size: 0.80em;
+    text-align: center;
+}
+
+/* Container for all the forms*/
+.container{
+	height: 350px;
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border: 1px solid #08038c;
+    box-shadow: 0 0 8px 3px #fff;
+	padding: 60px;
+    font-size: 22px;
+    background: #030406;
+    border-radius: 20px;
+    margin: 10px 0 10px 0;
+    color: #f6f6f6;
+}
+
+.pull-left{float:left;}
+.pull-right{float:right;}
+
+/* Where the JavaScript title written */
+header{
+	background:#6f8fb1;
+	color:#ffffff;
+	padding:5px 10px;
+	overflow:auto;
+	font-size:15px;
+	border-radius: 20px;
+}
+/* for the choices */
+.option{
+    margin-top: 10px;
+    font-size: 0.80em;
+	box-shadow: 0 0 8px 3px #fff;
+    width: 95%;
+    display: inline-block;
+    padding: 10px 0px 10px 15px;
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px 5px 5px 10px;
+    color: #cecece;
+    border-radius: 20px;
+}
+.option:hover{
+    background: #080808;
+    color: #f6f6f6;
+}
+/* all the buttons in the quiz */
+button{
+	font-family: 'Poppins', sans-serif;
+	color: #6f8fb1;
+    margin-left: 40%;
+    font-size: 15px;
+	margin-top: 10px;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background:#fff;
+    cursor: pointer;
+}
+button:hover{
+	background-color: #6f8fb1;
+    color: white;
+}
+footer{
+    font-size: 10px;
+	background:#6f8fb1;
+	color: rgba(255, 253, 253, 0.5);
+	padding:5px 10px;
+	overflow:auto;
+	border-radius: 20px;
+    position: relative;
+}
+
+@media only screen and (max-width: 600px){
+	.container{
+		width:70%;
+	}
+}
+
+
+
